@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "description": "Portfolio site for KSITIZ DEVKOTA",
-  "repository": "",
+  "repository": "https://github.com/vivekpandey2717340/Portfolio-ksitiz.git",
   "author": "KSITIZ DEVKOTA",
   "sideEffects": false,
   "type": "module",
