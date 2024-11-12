@@ -25,7 +25,7 @@
     "fs-extra": "^11.2.0",
     "isbot": "^4.1.0",
     "miniflare": "^3.20231030.4",
-    "portfolio": "file:",
+    "portfolio": "link:",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "rehype-img-size": "^1.0.1",
