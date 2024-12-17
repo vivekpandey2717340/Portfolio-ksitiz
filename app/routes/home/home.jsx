@@ -16,6 +16,10 @@ import sliceTexture from '~/assets/Rojgari In Khadi/Rojgari.jpg';
 import sprTextureLarge from '~/assets/TWB Creates/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from '~/assets/TWB Creates/spr-lesson-builder-dark-large.jpg';
 import sprTexture from '~/assets/TWB Creates/spr-lesson-builder-dark-large.jpg';
+import SunWay1 from '~/assets/sunway/SunWay1.jpg';
+import sunway2 from '~/assets/sunway/SunWay2.jpg';
+import softwarica from '~/assets/Softwarica/Softwarica.jpg';
+
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -58,6 +62,7 @@ export const Home = () => {
   const projectFour = useRef();
   const projectFive = useRef();
   const projectSix = useRef();
+  const ProjectSeven = useRef();
   const details = useRef();
 
   useEffect(() => {
@@ -130,7 +135,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Insight A Podcast"
-        description="'Insight A Poscast' is a passionate initiation to capture the stories, cover the professional vview point, and in turn drive the aspiring future marketers towards their objective"
+        description="'Insight A Poscast' is a passionate initiation to capture the stories, cover the professional view point, and in turn drive the aspiring future marketers towards their objective. We are the initiators of providing the right value content in the context of a marketing podcast focused on Nepal. With the immense growth of digital marketing and podcast visual content in the digital domain, Insight is an effort to fill the gap between both. We want to demonstrate what is correct and what is not in marketing. We want to educate and make individuals aware of where to begin and how to avoid relying on false information. The insight podcast series helps talented executives challenge and stay informed about the current difficulties in the digital marketing industry through the stories of people who have already succeeded."
         buttonText="Watch PodCast"
         buttonLink="https://www.youtube.com/@insightapodcast"
         model={{
@@ -154,7 +159,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Rojgari In Khadi"
-        description="Write here Description"
+        description="Rojgari in Khadi is dedicated to addressing employment challenges and promoting transparency in job consultations, particularly in rural areas. The initiative focuses on bridging the gap between job seekers and genuine opportunities by providing a reliable platform for information sharing. The project included social media management, branding, website development, and a dedicated dashboard to manage queries effectively."
         buttonText="View Website"
         buttonLink="https://rojgari-in-khadi.vercel.app/"
         model={{
@@ -214,8 +219,11 @@ export const Home = () => {
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
         index={5}
-        title="Influencer Meet Beta"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Wisdom Point(Free Library)"
+        description="‘The Wisdom Point’- “म पढेर बन्छु ।“is an public library for the bookworms of Nepal. This is initiative of IT & Editorial Club of Softwarica in order to nurture reading culture in Nepalese youth. 
+Vision
+As the name suggests, different branches of the library will be opened at distance of 30-50 kilometers each around the Kathmandu Valley. It ensures easy access to the information by the people of all the location through decentralization. 
+The first branch has been opened at the New Baneshwor and other eight will be following in the coming four years. We will open two branches each year. For other branches we have chosen Pulchowk, Thamel, Thimi, Boudha, Kirtipur, Tangal and Maharajgunj. After these eight branches we will open 1 branch in Kathmandu Valley and two other in other districts of Nepal. "
         buttonText="View project"
         buttonLink="https://www.instagram.com/influencer_meet_beta?igsh=dHhycXRqaGg1cGhn"
         model={{
@@ -234,21 +242,39 @@ export const Home = () => {
         sectionRef={projectSix}
         visible={visibleSections.includes(projectSix.current)}
         index={6}
-        title="Need to Be changed"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="UpSkilling For Stater(SunWay Collage Kathmandu)"
+        description="Upskilling is a transformative Value-Added Program specifically designed for Sunway students, aimed at enhancing their skills and preparing them for future challenges in academics, careers, and beyond. Recognizing the importance of continual growth in a rapidly evolving world, this program equips students with practical knowledge and competencies that complement their formal education."
+       
         model={{
           type: 'phone',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
+              srcSet: `${SunWay1} 375w, ${SunWay1} 750w`,
+              placeholder: SunWay1,
             },
             {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
+              srcSet: `${sunway2} 375w, ${sunway2} 750w`,
+              placeholder: sunway2,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-7"
+        sectionRef={ProjectSeven}
+        visible={visibleSections.includes(projectSix.current)}
+        index={7}
+        title="Value Added Education(Softwarica College)"
+        description="Upskilling is a transformative Value-Added Program specifically designed for Sunway students, aimed at enhancing their skills and preparing them for future challenges in academics, careers, and beyond. Recognizing the importance of continual growth in a rapidly evolving world, this program equips students with practical knowledge and competencies that complement their formal education."
+       
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: `${softwarica} 800w, ${softwarica} 1920w`,
+              placeholder: softwarica,
             },
           ],
         }}
